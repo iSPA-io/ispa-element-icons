@@ -36,7 +36,7 @@ async function getIcons(style) {
   return Promise.all(
     files.map(async (file) => ({
       svg: await fs.readFile(`./optimized/${style}/${file}`, 'utf8'),
-      componentName: `I${camelcase(file.replace(/\.svg$/, ''), {
+      componentName: `Icon${camelcase(file.replace(/\.svg$/, ''), {
         pascalCase: true,
       })}`,
     }))
