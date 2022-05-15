@@ -1,0 +1,14 @@
+# Config file
+project.yaml
+svgo.regular.yaml
+svgo.solid.yaml
+
+# Editor file
+prettier.config.js
+.gitignore
+
+# Folder
+optimized
+src
+scripts
+node_modules
